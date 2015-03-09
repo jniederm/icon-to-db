@@ -55,7 +55,7 @@ public class Main {
 
     private static String getInsertLine(String uuid, String dataUri, String osName) {
         return "-- " + osName + " " + osNameToIdMap.get(osName) + System.lineSeparator()
-                + "INSERT INTO vm_icons VALUES ('" + uuid + "', '" + dataUri + "', " + osNameToIdMap.get(osName) + ");";
+                + "INSERT INTO vm_icons(id, data_url, default_for_os) VALUES ('" + uuid + "', '" + dataUri + "', " + osNameToIdMap.get(osName) + ");";
     }
 
     private static String toUuid(String str) {
