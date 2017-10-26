@@ -1,0 +1,9 @@
+{
+  "name": "datauri-cmd",
+  "version": "1.0.0",
+  "description": "Datauri degerator utility",
+  "scripts": {},
+  "devDependencies": {
+    "datauri": "^1.0.5"
+  }
+}

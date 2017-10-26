@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const datauri = require('datauri').sync
+
+if (process.argv.length != 3) {
+    console.error('Usage: datauri <filename>')
+    process.exit(1)
+}
+
+console.log(datauri(process.argv[2]))
